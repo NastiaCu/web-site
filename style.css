@@ -78,22 +78,25 @@ button {
     height: 50px;
   }
   
-  .success:hover {
+.success:hover {
+    box-shadow: 2px 2px 2px #000;
+    border: 2px solid #000;
     background-color: #D2D2D2;
-  }
+    color: #000;
+}
   
-  .call {
+.call {
     background-color: #fff;
     box-shadow: 2px 2px 2px #000;
     border: 2px solid #000;
     color: #000;
     width: 200px;
     height: 50px;
-  }
+}
   
-  .call:hover {
+.call:hover {
     background-color: #D2D2D2;
-  }
+}
 
 @media (max-width: 768px) {
     header {
