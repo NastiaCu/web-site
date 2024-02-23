@@ -9,71 +9,126 @@
 </head>
 
 <body>
-    <section>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+            WATCHES.CO
+        </div>
         
-        <header>
-            <div class="logo">
-                <img src="assets/logo.png" alt="logo">
-                WATCHES.CO
-            </div>
-            <nav>
-                <a href="#" class="nav-link">HOME</a>
-                <a href="#" class="nav-link">PRODUCTS</a>
-                <a href="#" class="nav-link">ABOUT US</a>
-                <a href="#" class="nav-link">CONTACT US</a>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                <a href="#" class="nav-link">CART(0)</a>
-            </nav>
-        </header>
+        <nav>
+            <a href="#home" class="nav-link"><b>HOME</b></a>
+            <a href="#products" class="nav-link">PRODUCTS</a>
+            <a href="#about" class="nav-link">ABOUT US</a>
+            <a href="#contact" class="nav-link">CONTACT US</a>
+        </nav>
+
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <a href="#" class="nav-link">CART(0)</a>
+        </div>
+        
+    </header>
+    <section>
     
         <main>
-            <div class="container">
-                
+            <div id="home">
+                <div class="container">
+                    
+                    <div class="left">
+                        <div class="intro-header">
+                            <h3>CAPTIVATE THE SENSES</h3>
+                            <h3>THROUGH OUR WATCHES</h3>
+                        </div>
+
+                        <div class="intro-paragraph">
+                            <p>Discover an exquisite collection of watches that evoke</p> 
+                            <p>emotions and leave a lasting impression.</p>
+                        </div>
+
+                        <div class="buttons">
+                            <button class="success">SEE ALL PRODUCTS</button>
+                            <button class="call">CONTACT US</button>    
+                        </div>
+                    
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="number">100K+</span>
+                                <span class="label">Customers</span>
+                            </div>
+                            
+                            <div class="stat">
+                                <span class="number">10</span>
+                                <span class="label">Products</span>
+                            </div>
+                            
+                            <div class="stat">
+                                <span class="number">15</span>
+                                <span class="label">Countries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <img src="assets/watch_preview.png" alt="watch_preview">
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <!-- <footer>
+            <p>WATCHES.CO &copy; 2023. All rights reserved.</p>
+        </footer> -->
+    </section>
+
+    <section>
+        <main>
+            <div id="about">
+
                 <div class="left">
+    
                     <div class="intro-header">
-                        <h3>CAPTIVATE THE SENSES</h3>
-                        <h3>THROUGH OUR WATCHES</h3>
+                        <h3>EXPLORE OUR</h3>
+                        <h3>EXCLUSIVE COLLECTION</h3>
                     </div>
 
                     <div class="intro-paragraph">
-                        <p>Discover an exquisite collection of watches that evoke</p> 
-                        <p>emotions and leave a lasting impression.</p>
+                        <p>Dive into our meticulously crafted collection of watches, each a</p> 
+                        <p>fusion of contemporary design and timeless tradition. From classic</p>
+                        <p>leather straps to modern stainless steel, our watches are a</p>
+                        <p>testament to exceptional craftsmanship.</p>
                     </div>
-
-                    <div class="buttons">
-                        <button class="success">SEE ALL PRODUCTS</button>
-                        <button class="call">CONTACT US</button>    
-                    </div>
-                
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="number">100K+</span>
-                            <span class="label">Customers</span>
-                        </div>
-                        
-                        <div class="stat">
-                            <span class="number">10</span>
-                            <span class="label">Products</span>
-                        </div>
-                        
-                        <div class="stat">
-                            <span class="number">15</span>
-                            <span class="label">Countries</span>
-                        </div>
-                    </div>
+                    <img src="assets/Steel.png" alt="steel">
                 </div>
 
+                <div class="right">
+                    <img src="assets/Leather.png" alt="leather">
+                    <img src="assets/Vintage.png" alt="vintage">
+
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section>
+        <main>
+            <div id="products">
                 <div class="right">
                     <img src="assets/watch_preview.png" alt="watch_preview">
                 </div>
             </div>
         </main>
-    
-        <footer>
-            <p>WATCHES.CO &copy; 2023. All rights reserved.</p>
-        </footer>
-
     </section>
+
+    <section>
+        <main>
+            <div id="contact">
+                <div class="right">
+                    <img src="assets/watch_preview.png" alt="watch_preview">
+                </div>
+            </div>
+        </main>
+    </section>
+
 </body>
 </html>

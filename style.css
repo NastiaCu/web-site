@@ -4,6 +4,7 @@ body {
     line-height: 1.6;
     color: #000;
     background-color: #D2D2D2;
+    padding-top: 150px;
 }
 
 header {
@@ -14,7 +15,11 @@ header {
     align-items: center;
     padding: 0 50px;
     text-align: center;
-    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1000;
 }
 
 header a {
@@ -53,6 +58,7 @@ header .nav-link:hover {
 
 main {
     padding: 0 100px;
+    position: relative;
 }
 
 main h3 {
