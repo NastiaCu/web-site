@@ -185,15 +185,13 @@ button {
 
 .card-container {
     display: flex;
-    justify-content: space-around; /* Adjust this as needed */
+    justify-content: space-around; 
   }
-  
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    /* margin: auto; */
     text-align: center;
-    /* font-family: arial; */
     position: relative;
   }
   
@@ -244,3 +242,91 @@ form.example button:hover {
     background: grey;
 }
   
+
+.community-header{
+    display: flex; 
+    justify-content: center;
+}
+
+.community-paragraph{
+    display: flex; 
+    justify-content: center;
+}
+
+
+.email-area {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #D2D2D2;
+    color: #323232;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    border-right: none;
+}
+
+.email-area button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: #323232;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -10px; 
+}
+
+.email-area button:hover{
+    background-color: #000;
+
+}
+
+.logo-commynity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-commynity img {
+    max-width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.watch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+.watch-1 {
+    margin: -100px;  
+    margin-top: 20px;
+    width: 260px;
+    height: 375px;
+}
+  
+.watch-2 {
+    margin-top: 120px;
+    margin-bottom: -20px;
+    width: 375px;
+    height: auto;
+}
+
+.watch-3 {  
+    margin-right: -100px;
+    width: auto;
+    height: 375px;
+}
