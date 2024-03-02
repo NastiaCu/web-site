@@ -1,3 +1,4 @@
+/* Default styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,13 +8,14 @@ body {
     padding-top: 150px;
 }
 
+/* Header Styles */
 header {
     background-color: #D2D2D2;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 15px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -50,14 +52,32 @@ header .nav-link:hover {
     border-bottom: 2px solid #000;
 }
 
-.search-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+/* Responsive Styles */
+/* @media (max-width: 1000px){
+    header {
+        flex-direction: column;
+    }
 
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .nav-link {
+        flex-basis: calc(20% - 10px);
+        margin-bottom: 10px;
+    }
+} */
+
+/* Main Section Styles */
 main {
-    padding: 0 100px;
+    padding: 0 calc(8px + 1.5625vw);
     position: relative;
 }
 
@@ -66,20 +86,22 @@ main h3 {
     line-height: 0.5;
 }
  
-main p{
+main p {
     font-size: 16px;
-    line-height: 0.5;
+    line-height: 1;
 } 
 
+/* Container Styles */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Left and Right Styles */
 .left,
 .right {
-  width: 50%;
+    width: 50%;
 }
 
 .right img {
@@ -87,18 +109,22 @@ main p{
     height: auto; 
 }
 
+/* Introduction Header Styles */
 .intro-header{
     padding-bottom: 5px;
 }
 
+/* Introduction Paragraph Styles */
 .intro-paragraph{
     padding-bottom: 40px;
 }
 
+/* Buttons Styles */
 .buttons{
     padding-bottom: 40px;
 }
 
+/* Stats Styles */
 .stats {
     display: flex;
     margin-right: 50px; 
@@ -120,35 +146,38 @@ main p{
     font-size: 16px; 
 }
 
+/* Footer Styles */
 footer {
     margin-top: 80px;
     padding: 0 60px;
 }
 
-
+/* Button Styles */
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-  }
+}
 
+/* Success Button Styles */
 .success {
     background-color: #000;
     color: #fff;
     width: 230px;
     height: 50px;
     margin-right: 40px;
-  }
-  
+}
+
 .success:hover {
     box-shadow: 2px 2px 2px #000;
     border: 2px solid #000;
     background-color: #D2D2D2;
     color: #000;
 }
-  
+
+/* Call Button Styles */
 .call {
     background-color: #fff;
     box-shadow: 2px 2px 2px #000;
@@ -158,51 +187,36 @@ button {
     height: 50px;
     margin-right: 40px;
 }
-  
+
 .call:hover {
     background-color: #D2D2D2;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    header .logo {
-        margin-bottom: 10px;
-    }
-
-    header nav {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    header .nav-link {
-        flex-basis: calc(20% - 10px);
-        margin-bottom: 10px;
-    }
-}
-
+/* Card Container Styles */
 .card-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
     display: flex;
     justify-content: space-around; 
-  }
+}
 
+/* Card Styles */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     text-align: center;
     position: relative;
-  }
-  
-  .price {
+}
+
+/* Price Styles */
+.price {
     color: grey;
     font-size: 22px;
-  }
-  
-  .card button {
+}
+
+/* Card Button Styles */
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -212,13 +226,14 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
+}
 
-  
+/* Card Button Hover Styles */
+.card button:hover {
+    opacity: 0.7;
+}
+
+/* Email Form Styles */
 form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
@@ -228,6 +243,7 @@ form.example input[type=text] {
     background: #f1f1f1;
 }
 
+/* Email Button Styles */
 form.example button {
     float: left;
     width: 20%;
@@ -240,28 +256,31 @@ form.example button {
     cursor: pointer;
 }
 
+/* Email Button Hover Styles */
 form.example button:hover {
     background: grey;
 }
-  
 
-.community-header{
+/* Community Header Styles */
+.community-header {
     display: flex; 
     justify-content: center;
 }
 
-.community-paragraph{
+/* Community Paragraph Styles */
+.community-paragraph {
     display: flex; 
     justify-content: center;
 }
 
-
+/* Email Area Styles */
 .email-area {
     margin: 20px;
     display: flex;
     justify-content: center;
 }
 
+/* Email Input Styles */
 input {
     padding: 10px;
     font-size: 16px;
@@ -276,6 +295,7 @@ input {
     border-right: none;
 }
 
+/* Email Button Styles */
 .email-area button {
     padding: 10px;
     font-size: 16px;
@@ -288,11 +308,12 @@ input {
     margin-left: -10px; 
 }
 
+/* Email Button Hover Styles */
 .email-area button:hover{
     background-color: #000;
-
 }
 
+/* Logo Community Styles */
 .logo-commynity {
     display: flex;
     justify-content: center;
@@ -300,26 +321,29 @@ input {
     text-align: center;
 }
 
+/* Logo Community Image Styles */
 .logo-commynity img {
     max-width: 26px;
     height: 26px;
     margin-right: 10px;
 }
 
+/* Watch Container Styles */
 .watch-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  
+}
+
+/* Watch 1 Styles */
 .watch-1 {
     margin: -100px;  
     margin-top: 20px;
     width: 260px;
     height: 375px;
 }
-  
+
+/* Watch 2 Styles */
 .watch-2 {
     margin-top: 120px;
     margin-bottom: -20px;
@@ -327,8 +351,103 @@ input {
     height: auto;
 }
 
+/* Watch 3 Styles */
 .watch-3 {  
     margin-right: -100px;
     width: auto;
     height: 375px;
+} 
+
+
+
+
+/* Updated Responsive Styles */
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .nav-link {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-actions button, .header-actions .nav-link {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons,
+    .stats,
+    .community-paragraph,
+    .email-area {
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: row;
+       
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .watch-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .watch-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .watch-container img,
+    .watch-image {
+        display: none;
+    }
 }
+
+
