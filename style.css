@@ -52,29 +52,6 @@ header .nav-link:hover {
     border-bottom: 2px solid #000;
 }
 
-/* Responsive Styles */
-/* @media (max-width: 1000px){
-    header {
-        flex-direction: column;
-    }
-
-    header .logo {
-        margin-bottom: 10px;
-    }
-
-    header nav {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    header .nav-link {
-        flex-basis: calc(20% - 10px);
-        margin-bottom: 10px;
-    }
-} */
-
 /* Main Section Styles */
 main {
     padding: 0 calc(8px + 1.5625vw);
@@ -144,12 +121,6 @@ main p {
 .stat .label {
     display: block;
     font-size: 16px; 
-}
-
-/* Footer Styles */
-footer {
-    margin-top: 80px;
-    padding: 0 60px;
 }
 
 /* Button Styles */
@@ -358,10 +329,7 @@ input {
     height: 375px;
 } 
 
-
-
-
-/* Updated Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 1000px) {
     header {
         flex-direction: column;
@@ -450,4 +418,54 @@ input {
     }
 }
 
+/* Mascot Styles */
+.mascot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: bounce 1s infinite alternate;
+    cursor: pointer;
+    z-index: 1002;
+}
 
+.mascot img {
+    width: 200px;
+    height: auto;
+}
+
+.mascot:hover::before {
+    content: "Welcome to WATCHES.CO! Explore our exquisite collection of watches.";
+    display: block;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 5px;
+    z-index: 1003;
+}
+
+.mascot:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 140%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    z-index: 1002;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
