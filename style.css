@@ -227,6 +227,7 @@ button {
 
 button[type="submit"] {
     background-color: #D2D2D2;
+    color: #000;
     border: none;
     outline: none;
 }
