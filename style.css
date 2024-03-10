@@ -40,7 +40,6 @@ header .logo img {
     height: auto; 
 }
 
-
 .toggle-icon {
     display: none;
 }
@@ -93,7 +92,7 @@ main {
 
 main h3 {
     font-size: 40px;
-    line-height: 0.5;
+    line-height: 1;
 }
  
 main p {
@@ -117,10 +116,6 @@ main p {
 .right img {
     max-width: auto;
     height: auto; 
-}
-
-.intro-header{
-    padding-bottom: 5px;
 }
 
 .intro-paragraph{
@@ -384,8 +379,8 @@ input {
         top: 60px; 
         left: 0;
         width: 100%;
-        background-color: #7b2cbf;
-        box-shadow: 0 0 10px #7b2cbf;
+        background-color: #D2D2D2;
+        box-shadow: 0 0 10px #D2D2D2;
         z-index: 1;
     }
 
@@ -419,6 +414,7 @@ input {
         text-align: center;
     }
 
+    .left img,
     .right img {
         width: 100%;
         height: auto;
@@ -432,12 +428,12 @@ input {
     }
 
     .card-container {
-        flex-direction: row;
-       
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 100%;
+        width: 80%; 
         margin-bottom: 20px;
     }
 
