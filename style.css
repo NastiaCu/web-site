@@ -119,7 +119,7 @@ main p {
 }
 
 .intro-paragraph{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .buttons{
@@ -464,7 +464,8 @@ input {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    animation: appear 20s forwards, bounce 1s infinite alternate;
+    opacity: 0;
+    animation: appear 2s forwards 2s, bounce 1s infinite alternate;
     cursor: pointer;
     z-index: 1002;
 }
